@@ -5,8 +5,7 @@
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:divider="@drawable/horizontal_divider"
         android:showDividers="middle"
         android:dividerPadding="16dp">
@@ -21,14 +20,13 @@
                 android:text="M. Bartaska"
                 android:textSize="25sp"
                 android:gravity="center"
-                android:paddingTop="8dp"
+                android:paddingTop="16dp"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"/>
             <TextView
                 android:id="@+id/player_1_points"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:text="0"
                 android:textSize="120sp"
                 android:textAlignment="center"
@@ -40,8 +38,7 @@
                 android:background="@color/colorPrimary"
                 android:text="Add point"
                 android:textColor="#FFFFFF"
-                android:layout_margin="8dp"
-                ra/>
+                android:layout_margin="8dp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"
@@ -54,37 +51,41 @@
                 android:text="M. Baneviciute"
                 android:textSize="25sp"
                 android:gravity="center"
-                android:paddingTop="8dp"
+                android:paddingTop="16dp"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"/>
             <TextView
                 android:id="@+id/player_2_points"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
+
                 android:text="0"
                 android:textSize="120sp"
                 android:gravity="center"/>
+
             <Button
                 android:id="@+id/player_2_add_point"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:background="@color/colorPrimary"
                 android:text="Add point"
-                android:textColor="#FFFFFF"
-                android:layout_margin="8dp"/>
+                android:textColor="#FFFFFF" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
-            android:paddingTop="8dp">
+            android:paddingTop="8dp"
+            android:gravity="bottom">
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -118,11 +119,13 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="top">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:padding="8dp">
                 <TextView
                     android:layout_width="0dp"
